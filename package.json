@@ -9,7 +9,7 @@
         "server": "cd server && npm run dev"
     },
     "keywords": [],
-    "author": "",
+    "author": "Braily Guzman",
     "license": "ISC",
     "devDependencies": {
         "@types/express": "^4.17.20",
