@@ -36,7 +36,15 @@ body {
     text-decoration: 2px underline var(--color-4);
     color: var(--color-3);
     text-underline-offset: 7px;
+    transition: opacity 0.5s;
 }
+
+#header-link:active,
+#header-link:focus,
+#header-link:hover{
+    opacity: 0.7;
+}
+
 
 /* Quiz */
 
@@ -55,9 +63,13 @@ body {
 
 #quiz-question {
     font-size: 1.5rem;
-    color: var(--color-4);
+    color: var(--color-1);
+    border-radius: 5px;
+    border: none;
     margin: 10px;
     width: 100%;
+    background-color: var(--color-3);
+    padding: 10px;
 }
 
 /* Quiz - Form */
@@ -72,10 +84,11 @@ body {
 .quiz-choice {
     font-size: 1.2rem;
     color: var(--color-3);
+    font-weight: 500;
 }
 
 .quiz-choice-input {
-    accent-color: var(--color-4);
+    accent-color: var(--color-3);
     margin-right: 10px;
 }
 
@@ -104,7 +117,7 @@ body {
     align-items: center;
     margin: 50px auto;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     border: 2px solid var(--color-3);
     padding: 10px;
     border-radius: 10px;
